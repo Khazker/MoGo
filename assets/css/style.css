@@ -303,7 +303,7 @@ hr {
 }
 
 .section-devices {
-  background: url("..assets/images/design_01.jpg") center no-repeat;
+  background: url("../assets/images/design_01.jpg") center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   padding-bottom: 0;
