@@ -303,7 +303,7 @@ hr {
 }
 
 .section-devices {
-  background: url("../assets/images/design_01.jpg") center no-repeat;
+  background: url("../../assets/images/design_01.jpg") center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   padding-bottom: 0;
@@ -322,7 +322,7 @@ hr {
 
 .section-map {
   padding: 55px 0 10px 0;
-  background: url("../assets/images/map.jpg") center no-repeat;
+  background: url("../../assets/images/map.jpg") center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
