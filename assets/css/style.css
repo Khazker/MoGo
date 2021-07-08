@@ -96,6 +96,7 @@ hr {
 }
 
 .header.fixed {
+  padding: 10px 0;
   background-color: #e28989;
   position: fixed;
   box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
@@ -120,6 +121,7 @@ hr {
   font-size: 30px;
   font-weight: 700;
   color: #fff;
+  cursor: pointer;
 }
 
 /*Nav*/
@@ -178,6 +180,10 @@ hr {
   cursor: pointer;
 
   display: none;
+}
+
+.nav_toggle:focus {
+  outline: 0;
 }
 
 .nav_toggle-item {
@@ -625,7 +631,12 @@ hr {
   position: relative;
 }
 
+.reviews .slick-slider {
+  padding: 0 110px;
+}
+
 .reviews_item {
+  min-height: 210px;
   padding-left: 255px;
   position: relative;
 }
@@ -635,7 +646,6 @@ hr {
   width: 210px;
   height: 210px;
   position: absolute;
-  top: -40px;
   left: 0;
   z-index: 1;
 }
@@ -664,16 +674,24 @@ hr {
   background-color: #f38181;
 }
 
-.reviews_btn {
+.slick-arrow {
+  display: block;
   font-size: 0;
   color: transparent;
   position: absolute;
+  border: 0;
+  background: none;
   top: 50%;
   z-index: 1;
+  cursor: pointer;
   transform: translateY(-50%);
 }
 
-.reviews_btn::after {
+.slick-arrow:focus {
+  outline: 0;
+}
+
+.slick-arrow::after {
   content: "";
   display: block;
   width: 16px;
@@ -682,12 +700,12 @@ hr {
   border-left: 2px solid #ccc;
 }
 
-.reviews_btn-prev {
+.slick-prev {
   left: 0;
   transform: rotate(-45deg);
 }
 
-.reviews_btn-next {
+.slick-next {
   right: 0;
   transform: rotate(135deg);
 }
@@ -1233,7 +1251,7 @@ footer_social-header b {
   }
 
   /*Reviews*/
-  .reviews {
+  .reviews .slick-slider {
     padding: 0 60px;
   }
 
@@ -1305,6 +1323,10 @@ footer_social-header b {
     left: 0;
 
     background-color: #e28989;
+  }
+
+  .nav.active {
+    display: block;
   }
 
   .nav_link {
@@ -1485,11 +1507,11 @@ footer_social-header b {
     }
 
     /*Reviews*/
-    .reviews {
+    .reviews .slick-slider {
       padding: 0;
     }
 
-    .reviews_btn {
+    .slick-arrow {
       top: 18%;
     }
 
